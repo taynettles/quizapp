@@ -20,7 +20,7 @@ const signin = () => {
         <Center mt={10}>
           <VStack spacing="4">
             <Heading fontSize="3xl" mb={2}>
-              Hello, Welcome to the Quiz App!!
+              Welcome to the Quiz Creator App
             </Heading>
             <Button leftIcon={<FcGoogle />} onClick={() => siginWithGoogle()}>
               Sign In with Google
