@@ -6,7 +6,7 @@ import Navbar from '../common/Navbar';
 import { useAuth } from '../lib/auth';
 
 const signin = () => {
-  const { auth, siginWithGoogle } = useAuth();
+  const { auth, signInWithGoogle } = useAuth();
   const router = useRouter();
 
   if (auth) {
@@ -22,7 +22,7 @@ const signin = () => {
             <Heading fontSize="3xl" mb={2}>
               Welcome to the Quiz Creator App
             </Heading>
-            <Button leftIcon={<FcGoogle />} onClick={() => siginWithGoogle()}>
+            <Button leftIcon={<FcGoogle />} onClick={() => signInWithGoogle()}>
               Sign In with Google
             </Button>
           </VStack>
